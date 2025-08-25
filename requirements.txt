@@ -1,6 +1,0 @@
-# No external dependencies required
-# This game uses only Python standard library modules:
-# - random (for AI random moves)
-# - time (for AI thinking delay)
-# - os (for screen clearing)
-# - sys (for dependency checking)
