@@ -6,12 +6,13 @@ A Python command-line tic-tac-toe game with AI opponents of varying difficulty l
 
 - **Multiple Game Modes**: Choose between Human vs Human or Human vs AI
 - **AI Difficulty Levels**:
-  - **Easy**: Random moves (great for beginners)
+  - **Easy**: Random moves (great for beginners) [default]
   - **Medium**: 70% optimal moves, 30% random (challenging but beatable)
   - **Hard**: Unbeatable AI using minimax algorithm
-- **Clean Interface**: Clear terminal display with intuitive controls
+- **Clean Interface**: Clear terminal display with automatic screen clearing
 - **Exit Anytime**: Type 'exit' to quit at any menu or during gameplay
-- **User-Friendly**: Default options and clear instructions throughout
+- **User-Friendly**: Default options and streamlined menu navigation
+- **Dependency Checking**: Automatic Python version validation on startup
 
 ## Installation
 
@@ -37,9 +38,9 @@ A Python command-line tic-tac-toe game with AI opponents of varying difficulty l
 
 When playing against AI, choose from:
 
-1. **Easy** [default]: AI makes random moves
-2. **Medium**: AI plays optimally 70% of the time
-3. **Hard**: Unbeatable AI using minimax algorithm
+1. **Easy** [default]: AI makes random moves (perfect for beginners)
+2. **Medium**: AI plays optimally 70% of the time (challenging but beatable)
+3. **Hard**: Unbeatable AI using minimax algorithm (perfect play)
 
 ### Controls
 
@@ -75,7 +76,8 @@ ___|___|___
 - **Board representation**: 9-element list for the 3x3 grid
 - **AI implementation**: Minimax algorithm for optimal play
 - **Input validation**: Ensures all moves are valid
-- **Cross-platform**: Uses appropriate screen clearing for different operating systems
+- **Dependency checking**: Python version validation (3.6+ required)
+- **Cross-platform screen clearing**: Uses `os.system('clear')` for clean interface
 
 ### AI Strategy
 
@@ -99,4 +101,4 @@ Created: August 25, 2025
 
 ## License
 
-This project is open source and available under the MIT [License](LICENSE).
+This project is open source and available under the MIT [LICENSE](LICENSE).
