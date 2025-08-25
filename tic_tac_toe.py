@@ -1,3 +1,21 @@
+# tic_tac_toe.py
+# by Thomas Chung
+# on August 25, 2025
+# This script implements a command-line tic-tac-toe game with AI opponents
+# Step by step:
+# 1. Check Python version and dependencies on startup
+# 2. Display game mode selection menu (Human vs AI or Human vs Human)
+# 3. For AI mode, display difficulty selection (Easy/Medium/Hard)
+# 4. Clear screen and start game with selected configuration
+# 5. Display game board with position numbers for reference
+# 6. Handle player input with validation and exit functionality
+# 7. For AI turns, use difficulty-based move selection:
+#    - Easy: Random moves
+#    - Medium: 70% optimal, 30% random
+#    - Hard: Unbeatable minimax algorithm
+# 8. Check for win conditions or tie after each move
+# 9. Display final result and end game
+
 import random
 import time
 import os

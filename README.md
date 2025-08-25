@@ -78,6 +78,7 @@ ___|___|___
 - **Input validation**: Ensures all moves are valid
 - **Dependency checking**: Python version validation (3.6+ required)
 - **Cross-platform screen clearing**: Uses `os.system('clear')` for clean interface
+- **Well-documented code**: Comprehensive header comments with step-by-step process description
 
 ### AI Strategy
 
