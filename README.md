@@ -88,14 +88,15 @@ ___|___|___
 - Python 3.6 or higher
 - No external dependencies required
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contributing
 
 Feel free to fork this project and submit pull requests for improvements!
 
 ## Author
 
-Created with assistance from Claude Code (claude.ai/code)
+Thomas Chung  
+Created: August 25, 2025
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

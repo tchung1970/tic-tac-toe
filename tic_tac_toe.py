@@ -1,6 +1,34 @@
 import random
 import time
 import os
+import sys
+
+def check_dependencies():
+    """Check for required dependencies and prompt user to install missing ones."""
+    required_modules = []  # Add any future dependencies here
+    missing_modules = []
+    
+    for module in required_modules:
+        try:
+            __import__(module)
+        except ImportError:
+            missing_modules.append(module)
+    
+    if missing_modules:
+        print("Missing required dependencies:")
+        for module in missing_modules:
+            print(f"  - {module}")
+        print(f"\nPlease install missing dependencies with:")
+        print(f"pip install {' '.join(missing_modules)}")
+        print("\nThen run the game again.")
+        sys.exit(1)
+    
+    # Check Python version
+    if sys.version_info < (3, 6):
+        print("This game requires Python 3.6 or higher.")
+        print(f"You are using Python {sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}")
+        print("Please upgrade Python and try again.")
+        sys.exit(1)
 
 class TicTacToe:
     def __init__(self, ai_mode=False, difficulty='hard'):
@@ -233,4 +261,5 @@ def main():
     game.play()
 
 if __name__ == "__main__":
+    check_dependencies()
     main()
